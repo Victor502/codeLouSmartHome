@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: auto;
+}
+
+
+/********************** Flex ********************/
+
+.wrap,
+.main_header,
+.main_nav ul,
+.what_we_offer,
+footer {
+    display: flex;
+}
+
+
+/********************** Header ********************/
+
+.main_title {
+    order: -1;
+    margin-top: 5px;
+    font-family: 'Noticia Text', serif;
+    font-size: 3rem
+}
+
+.main_header {
+    text-align: center;
+    flex-direction: column;
+    background-color: #00B08B;
+    margin: auto;
+    height: 170px
+}
+
+
+/********************** Nav ********************/
+
+.main_nav {
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+.main_nav ul {
+    padding: 0;
+}
+
+.main_nav li {
+    display: block;
+    margin: auto;
+}
+
+
+/******* Nav page links *********/
+
+.main_nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 6px 10px;
+}
+
+.main_nav a:hover {
+    color: white;
+}
+
+.selected a {
+    color: white;
+}
+
+
+/********************** Body ********************/
+
+.home_page img {
+    max-width: 100%;
+}
+
+.wrap {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Noticia Text', serif;
+}
+
+
+/********************** what we offer page  ********************/
+
+.what_we_offer div {
+    margin: 25px 0 50px 0;
+    padding: 5px;
+    border: 1px solid #00B08B;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #00B08B;
+}
+
+.what_we_offer div p {
+    margin: auto;
+    padding: 15px;
+}
+/********************** contact me page  ********************/
+
+.contactMe img {
+    max-width: 100%;
+}
+
+
+/********************** footer ********************/
+
+footer {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00B08B;
+    height: 85px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+.social_media {
+    margin-top: 5px;
+}
+
+.social_media img {
+    margin: auto 3px;
+}
