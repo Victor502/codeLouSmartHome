@@ -74,7 +74,9 @@ footer {
 
 /********************** Body ********************/
 
-.home_page img {
+.home_page img,
+.what_I_do img,
+.contact_us img {
     max-width: 100%;
 }
 
@@ -90,9 +92,10 @@ footer {
 
 /********************** what we offer page  ********************/
 
+.last-p,
 .what_we_offer div {
     margin: 25px 0 50px 0;
-    padding: 5px;
+    padding: 10px 5px;
     border: 1px solid #00B08B;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #00B08B;
@@ -102,6 +105,14 @@ footer {
     margin: auto;
     padding: 15px;
 }
+
+.last-p {
+    margin: 10%;
+    padding: 5px;
+    text-align: center;
+}
+
+
 /********************** contact me page  ********************/
 
 .contactMe img {
@@ -131,4 +142,76 @@ footer img {
 
 .social_media img {
     margin: auto 3px;
+}
+
+
+/********************** media Quierys ********************/
+
+@media screen and (min-width: 509px) {
+    .main_title {
+        margin: auto;
+        padding: 0 10px
+    }
+}
+
+@media screen and (min-width: 630px) {
+    body {}
+    /********************** fix main pics on pages ********************/
+    .home_page img,
+    .what_I_do img,
+    .contact_us img {
+        display: flex;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .home_page img,
+    .what_I_do img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact_us img {
+        max-width: 80%;
+    }
+    /********************** what we offer page ********************/
+    .what_we_offer {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {}
+    .main_header {
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .main_title {
+        margin: auto;
+        max-width: 45%;
+    }
+    .main_nav {
+        margin-right: auto;
+    }
+    /*.wrap p {
+        align-self: center;
+        max-width: 70%;
+    }*/
+    .what_we_offer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .what_we_offer h2 {
+        margin: 30px 25%;
+    }
+    .what_we_offer div {
+        flex: 1;
+        margin: 5px;
+    }
+    .stacked-pic {
+        display: flex;
+        justify-content: space-around;
+    }
 }
