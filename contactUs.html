@@ -1,19 +1,21 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title>Louisville Smart Home</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Louisville, KY</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="foundation-6/css/foundation.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Noticia+Text" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
 </head>
 
 <body>
-    <header class="main_header">
-        <nav class="main_nav">
+    <header class="main-header">
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="whatIDo.html">What I do</a></li>
@@ -21,18 +23,45 @@
                 <li class="selected"><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <!--main content-->
+
         <h1 class="main_title">Louisville Smart Home</h1>
     </header>
-    <div class="home_page"><img src="img/FFour.jpg" alt="photo of Vic" class="profile-photo"></div> 
-    <section class="wrap">
-        <div class="contactMe">
-            <h2>About Me</h2>
-            <p>Hello, my name is Victor. I graduated from the University of Louisville in 2004. I have had the privilage to grow up with technology. I remember playing Orgen Trail on Microsoft DOS and calling my friends on the home phone after they paged me, lol.  I enjoy technology and stay up to date on the latest trends.
-            </p>
-            <p>If you would like to follow me on twitter follow me <a href="https://twitter.com/VictorHorton">@victorhorton</a>
-            </p>
+    <div class="grid-x grid-padding-x">
+        <div class="medium-7 column">
+            <div class="contact_us"><img src="img/FFour.jpg" alt="photo of Victor" class="profile-photo"></div>
+            <section class="contactMe">
+                <div class="wrap">
+                    <h2>About Me</h2>
+                    <p>Hello, my name is Victor. I graduated from the University of Louisville in 2004. I have had the privilage to grow up with technology. I remember playing Orgen Trail on Microsoft DOS and calling my friends on the home phone after they paged me, lol. I recently finished CodeLouisville's Frontend Development course. I enjoy technology and stay up to date on the latest trends.
+                    </p>
+                    <p>If you would like to follow me on twitter <a href="https://twitter.com/VictorHorton">@victorhorton</a>
+                    </p>
+                </div>
+            </section>
         </div>
-    </section>
+        <!--contact me form-->
+        <div class="small-12 medium-5 column">
+            <div class="wrap">
+                <form class="contact-form">
+                    <div>
+                        <label for="name"><h3>Name</h3></label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="email"><h3>Email</h3></label>
+                        <input type="email" id="email" placeholder="jane.doe@example.com">
+                    </div>
+                    <div>
+                    <label for="howCanHelp"><h3>What can I help with?</h3></label>
+                    <textarea rows="5" cols="30" placeholder="What do you need help with" id="howCanHelp"></textarea>
+                    </div>
+                    <a class="button secondary" data-open="thank-you">Contact Me</a>
+                </form>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="social_media">
             <a href="https://twitter.com/VictorHorton"><img src="img/twitterlogo.jpg" alt="twitter logo" class="social-icon"></a>
@@ -40,6 +69,20 @@
         </div>
         <p>Horton Innovations &copy;2017</p>
     </footer>
+
+    <!--Modal-->
+    <div class=" small reveal" id="thank-you" data-reveal>
+        <h1>Thank you!</h1>
+        <p class="lead"> We will contact you soon.</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <!--End Modal-->
+    <script src="foundation-6/js/vendor/jquery.js"></script>
+    <script src="foundation-6/js/vendor/what-input.js"></script>
+    <script src="foundation-6/js/vendor/foundation.js"></script>
+    <script src="foundation-6/js/app.js"></script>
 </body>
 
 </html>

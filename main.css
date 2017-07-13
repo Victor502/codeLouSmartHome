@@ -10,8 +10,8 @@ h1 {
 /********************** Flex ********************/
 
 .wrap,
-.main_header,
-.main_nav ul,
+.main-header,
+.main-nav ul,
 .what_we_offer,
 footer {
     display: flex;
@@ -24,10 +24,10 @@ footer {
     order: -1;
     margin-top: 5px;
     font-family: 'Noticia Text', serif;
-    font-size: 3rem
+    font-size: 3rem;
 }
 
-.main_header {
+.main-header {
     text-align: center;
     flex-direction: column;
     background-color: #00B08B;
@@ -38,17 +38,17 @@ footer {
 
 /********************** Nav ********************/
 
-.main_nav {
+.main-nav {
     text-align: center;
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
 }
 
-.main_nav ul {
+.main-nav ul {
     padding: 0;
 }
 
-.main_nav li {
+.main-nav li {
     display: block;
     margin: auto;
 }
@@ -56,14 +56,14 @@ footer {
 
 /******* Nav page links *********/
 
-.main_nav a {
+.main-nav a {
     display: block;
     text-decoration: none;
     color: black;
     padding: 6px 10px;
 }
 
-.main_nav a:hover {
+.main-nav a:hover {
     color: white;
 }
 
@@ -74,7 +74,9 @@ footer {
 
 /********************** Body ********************/
 
-.home_page img {
+.home_page img,
+.what_I_do img,
+.contact_us img {
     max-width: 100%;
 }
 
@@ -90,9 +92,10 @@ footer {
 
 /********************** what we offer page  ********************/
 
+.last-p,
 .what_we_offer div {
     margin: 25px 0 50px 0;
-    padding: 5px;
+    padding: 10px 5px;
     border: 1px solid #00B08B;
     border-radius: 5px;
     box-shadow: 1px 1px 10px #00B08B;
@@ -102,10 +105,31 @@ footer {
     margin: auto;
     padding: 15px;
 }
+
+.last-p {
+    margin: 10%;
+    padding: 5px;
+    text-align: center;
+}
+
+
 /********************** contact me page  ********************/
 
 .contactMe img {
     max-width: 100%;
+}
+
+.btn {
+    margin: 15px 0;
+}
+
+.contact-form {
+    font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: solid 2px #00B08B;
 }
 
 
@@ -131,4 +155,92 @@ footer img {
 
 .social_media img {
     margin: auto 3px;
+}
+
+
+
+/********************** media Quierys ********************/
+
+@media screen and (min-width: 509px) {
+    .main_title {
+        margin: auto;
+        padding: 0 10px
+    }
+}
+
+@media screen and (min-width: 630px) {
+
+    
+    .wrap {
+        max-width: 80%;
+    }
+/********************* fix main pics on pages ********************/
+    .home_page img,
+    .what_I_do img,
+    .contact_us img {
+        display: flex;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .home_page img,
+    .what_I_do img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact_us img {
+        max-width: 80%;
+    }
+    /********************** what we offer page ********************/
+    .what_we_offer {
+        display: flex;
+        flex-direction: column;
+     /*   max-width: 70%*/
+    }
+    
+    /********************** fixes form ********************/
+
+        .contact-form {
+        padding: 50px 0;
+    }
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .main-header {
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .main_title {
+        margin: auto;
+        max-width: 45%;
+    }
+    .main-nav {
+        margin-right: auto;
+    }
+    .wrap p {
+        align-self: center;
+        max-width: 90%;
+    }
+
+    .what_we_offer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+        
+    .what_we_offer div {
+        flex: 2 45%;
+        margin: 10px;
+    }
+
+    
+    .stacked-pic {
+        display: flex;
+        justify-content: space-around;
+    }
 }
